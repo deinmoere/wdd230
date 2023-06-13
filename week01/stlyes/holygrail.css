@@ -31,7 +31,8 @@ body {
   
   .right-sidebar {
     background: yellow;
-    grid-column: 3 / 4;
+    /* grid-column: 3 / 4; */
+    grid-column: 2 / 3;
   }
   aside {
     background: yellow;

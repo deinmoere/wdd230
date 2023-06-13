@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Diphylleia&family=Esteban&family=Kalam:wght@400;700&family=Roboto:ital,wght@0,300;0,700;1,300&display=swap');
+
+body {
+	font-family: 'Diphylleia', serif;
+    font-family: 'Esteban', serif;
+    font-family: 'Kalam', cursive;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+
+header {
+	background-color: #bbb;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+header,
+main {
+	max-width: 767px;
+	margin: 0 auto;
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+nav {
+	background-color: #36454f;
+	margin: 0 auto;
+	max-width: 800px;
+}
+nav ul {
+	list-style-type: none;
+}
+nav a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
+}
+
+nav a:hover {
+	border: 1px solid #fff;
+}
+
+.active {
+	color: yellow;
+}
