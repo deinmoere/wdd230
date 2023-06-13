@@ -1,0 +1,16 @@
+@media screen and (min-width: 640px) {
+    nav ul {
+		display: flex;
+	}
+	nav ul li {
+		flex: 1 1 100%;
+	}
+    .profile {
+        width: "500px";
+    }
+
+	main section {
+		display: grid;
+		grid-column: 1 / 3;
+	}
+}
