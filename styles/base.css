@@ -1,4 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Diphylleia&family=Esteban&family=Kalam:wght@400;700&family=Roboto:ital,wght@0,300;0,700;1,300&display=swap');
+/*  @import url('https://fonts.googleapis.com/css2?family=Diphylleia&family=Esteban&family=Kalam:wght@400;700&family=Roboto:ital,wght@0,300;0,700;1,300&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 
 body {
 	font-family: 'Diphylleia', serif;
@@ -10,7 +16,7 @@ body {
 
 
 header {
-	background-color: #bbb;
+	background-color: rgb(79, 79, 170);
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -20,7 +26,7 @@ header {
 
 
 header,
-main, footer {
+main, footer, nav {
 	max-width: 767px;
 	margin: 0 auto;
 	text-align: center;
@@ -36,13 +42,22 @@ img{
 h1, h2 {
 	padding: 1rem;
 	text-align: center;
-	font-size: 1.5rem;
+	font-size: 1.5rem;	
 }
-
+h1{
+	color: white;
+}
+h3{
+	background-color: rgb(197, 94, 94);
+	color: white;
+	text-align: center;
+	padding: 1%;
+	
+}
 nav {
-	background-color: #36454f;
+	background-color: rgb(197, 94, 94);
 	margin: 0 auto;
-	max-width: 800px;
+	max-width: 800px; 
 }
 nav, main ul {
 	list-style-type: none;
@@ -63,15 +78,144 @@ nav a:hover {
 	color: yellow;
 }
 
-/* section{
-	grid-column: 1 / 2;
-
-}*/
-
+.card{
+	margin: 0;
+	border: 1px solid black;
+	border-radius: 2%;
+	overflow: hidden;
+	font-size: 1.5rem; 
+	padding: 1rem;
+}  
 
 footer {
     background-color: rgb(79, 79, 170);
     color: white;
     padding: 5px;
     text-align: center;
+}  */
+
+@import url('https://fonts.googleapis.com/css2?family=Diphylleia&family=Esteban&family=Kalam:wght@400;700&family=Roboto:ital,wght@0,300;0,700;1,300&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
+
+body {
+	font-family: 'Diphylleia', serif;
+    font-family: 'Esteban', serif;
+    font-family: 'Kalam', cursive;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+header,
+main,
+footer {
+	max-width: 650px;
+	margin: 0 auto;
+}
+
+header {
+	background-color: rgb(79, 79, 170);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* padding: 20px;
+	border: 1px solid rgba(0, 0, 0, 0.1); */
+}
+
+img{
+    width: 15%;
+    margin: 1rem;
+    height: auto;
+    box-shadow: 0px 4px 20px 7px rgba(0, 0, 0, 0.2), 0 6px 20px 7px rgba(0, 0, 0, 0.19);
+}
+
+h1, h2 {
+	padding: 1rem;
+	text-align: center;
+	font-family: 'Diphylleia', serif;
+}
+
+h1{
+	color: white;
+	
+	font-size: 2em;
+}
+
+h3{
+	background-color: rgb(79, 79, 170);
+	color: white;
+	text-align: center;
+	padding: 1%;
+	
+}
+
+nav {
+	background-color: #36454f;
+	margin: 0 auto;
+	max-width: 800px;
+	list-style-type: none;
+	font-family: 'Diphylleia', serif;
+}
+
+nav a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
+}
+
+nav a:hover {
+	border: 1px solid #fff;
+}
+
+.active {
+	background-color: rgb(240, 92, 92);
+}
+
+.card{
+	margin: 0;
+	border: 1px solid black;
+	border-radius: 2%;
+	overflow: hidden;
+	font-size: 1.5rem; 
+	padding: 1rem;
+}  
+
+.card h3{
+    text-align: center;
+    padding: 1rem;
+    background-color: rgb(79, 79, 170);
+    color: white;
+}
+
+.card nav {
+	text-align: center;
+}
+#info{
+	text-align: center;
+	padding: 1rem;
+}
+main ul li{
+	list-style-type: none;
+
+}
+ul a {
+	color: blue;
+}
+footer {
+	display: block;
+    background-color: rgb(79, 79, 170);
+    color: white;
+    padding: 1.2rem;
+    text-align: center;
+	font-family: 'Diphylleia', serif;
+	font-size: 1rem;
+    padding-top: 1rem;
+	margin-bottom: 0.5rem;
+}
+
