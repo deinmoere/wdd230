@@ -34,7 +34,8 @@ header{
 #mode{
     position: absolute;
     top: 1rem;
-    right: 1rem;    
+    right: 1rem;  
+	color: white;  
 }
 img{
     width: 158.79px;
