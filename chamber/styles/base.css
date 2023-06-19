@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;800&family=Paytone+One&display=swap');
+
+/* CSS for Home Page */
+#content {
+    max-width:1400px;
+    margin: 0 auto;
+}
+nav a {
+    text-align: center;
+    color: #CBC0AD;
+    text-decoration: none;
+    font-family: 'Paytone One', sans-serif;
+    padding: 35px;    
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#hero-msg h1, #hero-msg h4 {
+    text-align: center;   
+    color: #E1B07E;
+}
+/* #hero-msg h4 {
+    
+} */
+.button-box {
+    text-align: center;
+}
+main section{
+    text-align: center;
+}
+main section img{
+    box-sizing: border-box;
+}
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);       
+}
+body {
+    background-color: #fcfbfb;
+    font-family: 'Paytone One', sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    margin: 0;
+}
+header {
+    background-color: #361D2E;
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+nav a:hover {
+    background-color: #E1B07E;
+    color: white;
+}
+h4 {
+    color:black;
+}
+.book {
+    background-color: #E1B07E;
+    color: #361D2E;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+.book:hover {
+    background-color:#CBC0AD;
+    color: white;
+}
+.home-title {
+    color: white;
+    font-family: 'Esteban', serif;
+    font-size: 2em;
+    margin-top: 10px;
+}

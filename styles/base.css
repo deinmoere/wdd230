@@ -1,5 +1,7 @@
-/*  @import url('https://fonts.googleapis.com/css2?family=Diphylleia&family=Esteban&family=Kalam:wght@400;700&family=Roboto:ital,wght@0,300;0,700;1,300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Diphylleia');
+@import url('https://fonts.googleapis.com/css2?family=Esteban');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,300&display=swap');
 * {
 	margin: 0;
 	padding: 0;
@@ -14,24 +16,26 @@ body {
 
 }
 
+header, main, footer, .navigation{
+    max-width: 650px;
+    margin: 0 auto;
+}
 
-header {
-	background-color: rgb(79, 79, 170);
-	display: flex;
-	align-items: center;
+header{
+    display: flex;
+    background-color: #072E74;
+    align-items: center;
 	justify-content: center;
-	padding: 20px;
-	border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-top: 0.5rem;
 }
-
-
-header,
-main, footer, nav {
-	max-width: 767px;
-	margin: 0 auto;
-	text-align: center;
+.active {
+	background-color: rgb(150, 75, 75);
 }
-
+#mode{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;    
+}
 img{
     width: 15%;
     margin: 1rem;
@@ -40,182 +44,116 @@ img{
 }
 
 h1, h2 {
-	padding: 1rem;
-	text-align: center;
-	font-size: 1.5rem;	
-}
-h1{
-	color: white;
-}
-h3{
-	background-color: rgb(197, 94, 94);
-	color: white;
-	text-align: center;
-	padding: 1%;
-	
-}
-nav {
-	background-color: rgb(197, 94, 94);
-	margin: 0 auto;
-	max-width: 800px; 
-}
-nav, main ul {
-	list-style-type: none;
-}
-nav a {
-	display: block;
-	color: #fff;
-	text-align: center;
-	padding: 1rem;
-	text-decoration: none;
-}
-
-nav a:hover {
-	border: 1px solid #fff;
-}
-
-.active {
-	color: yellow;
-}
-
-.card{
-	margin: 0;
-	border: 1px solid black;
-	border-radius: 2%;
-	overflow: hidden;
-	font-size: 1.5rem; 
-	padding: 1rem;
-}  
-
-footer {
-    background-color: rgb(79, 79, 170);
-    color: white;
-    padding: 5px;
     text-align: center;
-}  */
-
-@import url('https://fonts.googleapis.com/css2?family=Diphylleia&family=Esteban&family=Kalam:wght@400;700&family=Roboto:ital,wght@0,300;0,700;1,300&display=swap');
-
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+    padding: 1rem;
+    font-family: 'Diphylleia', serif;    
 }
 
-body {
-	font-family: 'Diphylleia', serif;
-    font-family: 'Esteban', serif;
-    font-family: 'Kalam', cursive;
-    font-family: 'Roboto', sans-serif;
-
-}
-
-header,
-main,
-footer {
-	max-width: 650px;
-	margin: 0 auto;
-}
-
-header {
-	background-color: rgb(79, 79, 170);
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	/* padding: 20px;
-	border: 1px solid rgba(0, 0, 0, 0.1); */
-}
-
-img{
-    width: 15%;
-    margin: 1rem;
-    height: auto;
-    box-shadow: 0px 4px 20px 7px rgba(0, 0, 0, 0.2), 0 6px 20px 7px rgba(0, 0, 0, 0.19);
-}
-
-h1, h2 {
-	padding: 1rem;
-	text-align: center;
-	font-family: 'Diphylleia', serif;
-}
-
-h1{
+h1 {
 	color: white;
-	
-	font-size: 2em;
+    font-size: 1em;
+}
+li, a {
+	font-family: 'Kalam', cursive;
+}
+#displayItems {
+	font-family: 'Kalam', cursive;
 }
 
-h3{
-	background-color: rgb(79, 79, 170);
-	color: white;
-	text-align: center;
-	padding: 1%;
-	
+ul{
+    list-style-type: none;
 }
 
-nav {
-	background-color: #36454f;
-	margin: 0 auto;
-	max-width: 800px;
-	list-style-type: none;
-	font-family: 'Diphylleia', serif;
+#menu{
+    position: absolute;
+    top: 2.5rem;
+    left: 1rem;
+    padding: 0.25rem;
 }
 
-nav a {
+/* responsive hamburger */
+#menu::before{
+    content: "☰";
+}
+#menu.open::before{
+    content: "❌";
+}
+
+/* when the button is clicked - the open class is toggle (added/removed) and accounted for here  */
+.open li {
 	display: block;
-	color: #fff;
-	text-align: center;
-	padding: 1rem;
-	text-decoration: none;
+	width: 100%;
+}
+.open li a {
+	display: block;
+}
+.navigation{
+    background-color: #0a0303;
 }
 
-nav a:hover {
-	border: 1px solid #fff;
+.navigation a{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0.5rem;
+    color: white;
+    font-family: 'Esteban', serif;
+    text-decoration: none;
 }
 
-.active {
-	background-color: rgb(240, 92, 92);
+
+.navigation a:hover{
+    background-color: rgb(150, 75, 75);
 }
 
+.navigation li{
+    display: none;
+}
+
+main{
+    padding-bottom: 3.3%;
+}
 .card{
-	margin: 0;
-	border: 1px solid black;
-	border-radius: 2%;
-	overflow: hidden;
-	font-size: 1.5rem; 
-	padding: 1rem;
-}  
+    margin: 1rem auto;
+    border: 2.5px solid rgb(168, 167, 167);
+    border-radius: 2%;
+    width: 98%;
+    box-shadow: 0px 4px 20px 7px rgba(0, 0, 0, 0.2), 0 6px 20px 7px rgba(0, 0, 0, 0.19);
+    overflow: hidden;
+}
 
 .card h3{
     text-align: center;
     padding: 1rem;
-    background-color: rgb(79, 79, 170);
+    background-color: #072E74;
     color: white;
 }
 
-.card nav {
-	text-align: center;
-}
-#info{
-	text-align: center;
-	padding: 1rem;
-}
-main ul li{
-	list-style-type: none;
-
-}
-ul a {
-	color: blue;
-}
-footer {
-	display: block;
-    background-color: rgb(79, 79, 170);
-    color: white;
-    padding: 1.2rem;
+.card nav{
     text-align: center;
-	font-family: 'Diphylleia', serif;
-	font-size: 1rem;
-    padding-top: 1rem;
-	margin-bottom: 0.5rem;
+    padding: 1%;
 }
 
+.card ul{
+    padding: 2rem;
+}
+
+.card li{
+    padding: 0.5%;
+}
+
+footer{
+    background-color: #072E74;
+    padding: 1.2rem;
+    display: block;
+    text-align: center;
+    color: white;
+    font-family: 'Diphylleia', serif;
+    margin-bottom: 0.5rem;
+}
+
+#lastModified{
+    font-size: 1rem;
+	color: yellow;
+    padding-top: 1rem;
+}

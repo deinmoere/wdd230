@@ -22,14 +22,20 @@
 <body>
     <header>
         <h1><img class="profile" src="images/myphoto.png" alt="My profile picture" width="400" height="200"> Deinmoere H. A. Alafegha-Quakumey</h1>
-        
+        <div id="mode">
+            ✅
+        </div>
     </header>
 
     <nav>
-        <a href="#" class="active">Home</a>             
-        <a href="chamber.html">Chamber</a>
-        <a href="site-plan.html">Site Plan</a>
-        <a href="form.html">Form</a>
+        <button id="menu"></button>
+        <ul class="navigation">
+            <li><a href="#" class="active">Home</a></li>             
+            <li><a href="chamber.html">Chamber</a></li>
+            <li><a href="https://deinmoere.github.io/wdd230/week01/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="form.html">Form</a></li>
+        </ul>
+        
     </nav>
  
     <main>
@@ -49,7 +55,7 @@
                 <li>Week 02: 
                     <a href="week02/design.html"> Design Principles</a> |
                     <a href="https://codepen.io/deinmoere/pen/qBQZKoN"> Responsive Menu</a> |
-                    <a href="week02/bom.html"> DOM manipulation</a> |
+                    <a href="week02/bom.html"> DOM manipulation</a> 
                 </li>
                 <li>Week 03: <a href="#"></a></li>
                 <li>Week 04: <a href="#"></a></li>
@@ -59,10 +65,13 @@
         </section>
 
         <section class="card" id="info">
-            <h3>Information</h3>            
-            <p>Accra, Ghana</p>
-            <p><span id="currentTemperature"></span>Temperature</p>
-            <p>Page Visits : <span id="pageVisit"></span></p>            
+            <h3>Information</h3>      
+            <nav id="displayItems">
+                <nav>Accra, Ghana</nav>
+                <nav><span id="currentTemperature"></span>Temperature</nav>
+                <nav>Page Visits : <span id="pageVisit"></span></nav>
+            </nav>      
+                        
         </section>
     </main>
     
