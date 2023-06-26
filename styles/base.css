@@ -37,6 +37,41 @@ header{
     right: 1rem;  
 	color: white;  
 }
+
+/* .hero {
+    margin: 10px auto;
+    position: relative;
+    border: 1px solid rgba(0,0,0,.1);
+    height: 300px;
+  } */
+
+.hero img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    object-fit: cover;
+  }
+
+.heroLabel {
+    position: absolute;
+    top: 30px;
+	left: 30px;
+    background: radial-gradient(#fff, #4D5B97);
+    border: 1px solid rgba(0,0,0,.75);
+    padding: 1.5rem;
+    box-shadow: 0 0 3rem #fff;
+    opacity: 0.75;   
+  }
+  
+.heroLabel p {
+    margin: 0;
+    padding: .25rem;
+    /* text-align: left; */
+    font-weight: 900;
+    font-size: 2rem;
+    font-family:'Kalam', cursive;
+  }
+
 img{
     width: 158.79px;
     margin: 1rem;
@@ -141,6 +176,13 @@ main{
 
 .card li{
     padding: 0.5%;
+}
+
+iframe{
+    display: block;
+    width: 90%;
+    height: 25rem;
+    margin: 0 auto;
 }
 
 footer{

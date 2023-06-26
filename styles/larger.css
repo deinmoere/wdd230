@@ -40,6 +40,19 @@
         grid-gap: 10px;
    
     }
+
+    .hero{
+        grid-column: 1/3;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .heroLabel{
+        top: 30rem;
+        left: 25rem;
+        font-size: 3rem;
+    }
+
     hr {
 		grid-column: 1/3;
 	}
@@ -69,6 +82,11 @@
     #displayItems nav{
         padding: 1rem;
     }   
+
+    iframe{
+        grid-column: 1/3;
+        width: 90%;
+    }
 
     footer{
         font-size: 1.5rem;

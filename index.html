@@ -21,12 +21,14 @@
 </head>
 <body>
     <header>
-        <img class="profile" src="images/myphoto.png" alt="My profile picture" >
+        <img class="profile" src="images/myphoto.webp" alt="My profile picture" >
         <h1> Deinmoere H. A. Alafegha-Quakumey</h1>
         <div id="mode">
             ✅
         </div>
     </header>
+
+    
 
     <nav>
         <button id="menu"></button>
@@ -40,6 +42,17 @@
     </nav>
  
     <main>
+        <div class="heroLabel">
+			<p>Sapporo Japan Temple</p>
+		</div>
+        <div class="hero">
+		<picture>
+            <source media="(max-width:650px )" srcset="images/temple-hero-small.webp">
+            <img src="images/temple-hero-large.webp" alt="Sapporo Japan Temple" width="960" height="300">
+		</picture>
+		
+	</div>
+
         <h2>WDD 230: Web Frontend Development</h2>
         <hr>
         <section class="card" id="activities">
@@ -79,10 +92,11 @@
             <nav id="displayItems">
                 <nav>Accra, Ghana</nav>
                 <nav><span id="currentTemperature"></span>Temperature</nav>
-                <nav>Page Visits : <span id="pageVisit"></span></nav>
+                <nav>Visit Count: <span id="pageVisit"></span></nav>
             </nav>      
                         
         </section>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.6802163626717!2d-0.07978832610361648!3d5.614153433064444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf842881c8901d%3A0xc8679d7d4af2c958!2s8266%20Nungua%20Main%20Rd%2C%20Accra!5e0!3m2!1sen!2sgh!4v1687745911421!5m2!1sen!2sgh" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </main>
     
     <footer>
