@@ -27,8 +27,10 @@ table {
     background-color: black;
   }
   caption {
+    caption-side: bottom;
     font-size: 1.2rem;
     font-weight: bold;
+    padding: 10px;
     margin-bottom: 10px;
   }
   
