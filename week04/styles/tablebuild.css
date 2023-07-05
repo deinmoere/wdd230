@@ -1,0 +1,90 @@
+:root {
+	--bord: 1px solid #c2bfbf;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,300&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  .heading {
+    border-top: var(--bord);
+    border-left: var(--bord);
+    border-right: var(--bord);
+    border-bottom: var(--bord);
+    color: white;
+    background-color: black;
+  }
+  caption {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  thead {
+    background-color: #f2f2f2;
+  }
+  
+  thead th {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  tbody td {
+    padding: 10px;
+    width: 200px;
+	  margin-top: 2rem;
+  }
+  
+  td:first-child {
+    font-weight: bold;
+  }
+
+  .null {
+    background-color: black;
+    border-right: black;
+  }
+  .col1 {
+    text-align: center;
+    color: white;
+    background-color: #353434;
+  }
+
+  .colgroup {
+    color: white;
+    text-align: center;
+    background-color: black;
+  }
+  .col {
+    text-align: center;
+    border-top: black;
+    border-left: var(--bord);
+    border-right: black;
+    border-bottom: var(--bord);
+    color: white;
+    background-color: #353434;
+  }
+  
+  .coln {
+    text-align: center;
+    border-top: var(--bord);
+    border-left: var(--bord);
+    border-right: var(--bord);
+    border-bottom: var(--bord);
+    padding: 10px;
+  }
