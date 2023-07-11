@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Yenagoa Chamber of Commerce">
+   
+    <meta property="og:title" content="Yenagoa Chamber of Commerce" >
+    <meta property="og:type" content="website" >
+    <meta property="og:url" content="https://deinmoere.github.io/wdd230/chamber/index.html" >
+    <meta property="og:image" content="https://www.nairaland.com/attachments/13423089_yenagoa8_jpegb9fe7dd0af7278f02b3cdfbfffc86491">
+
+    <title>Yenagoa Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+    <link rel="icon" href="favicon-two.ico" type="image/x-icon" >
+</head>
+
+<body>
+    <header>
+        <a id="logo_link" href="index.html">
+            <img class="logo" src="images/logo.png" alt="Yen Chamber">
+        </a>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" class="active">Home</a></li>             
+                <li><a href="chamber.html">Discover</a></li>
+                <li><a href="https://deinmoere.github.io/wdd230/week01/chamber-site-plan.html">Directory</a></li>
+                <li><a href="form.html">Membership</a></li>
+            </ul>
+<!--             <button id="menu"></button>
+            <a href="index.html">Home</a>
+            <a href="#">Discover</a>
+            <a href="site-plan-rafting.html">Directory</a>
+            <a class='join' href="membership.html">MEMBERSHIP</a> -->
+        </nav>
+        
+        <!-- <div id="mode">
+            ✅
+        </div> -->
+    </header>
+
+    <main>
+        <h1>Yenagoa Chamber Application Form</h1>
+        <form method="get" action="thankyou.html">
+            <fieldset>
+<!--                 <legend>Applicant Information</legend>-->                
+                <label class="top">First Name*<input type="text" id="fname" name="fname" required></label>
+                <label class="top">Last Name*<input type="text" id="lname" name="lname" required></label>
+                <label class="top">Position in Company<input type="text" id="position" name="position" pattern="[A-Za-z\s\-]{7,}"></label>
+                <label class="top">Email<input type="email" id="email" name="email" placeholder="someone@gmail.com" required></label>
+                <label class="top">Phone Number<input type="tel" id="phone" name="phone" placeholder="1235551234" required></label>
+                <label class="top">Business/Oganization Name<input type="text" id="business" name="business" required></label>
+                
+                <div>Membership Level</div>
+                <label class="sbs"><input type="radio" name="level" value="nonProfit">NP Membership</label>
+                <label class="sbs"><input type="radio" name="level" value="bronze">Bronze Membership</label>
+                <label class="sbs"><input type="radio" name="level" value="silver">Silver Membership</label>
+                <label class="sbs"><input type="radio" name="level" value="gold">Gold  Membership</label>
+
+                <!-- <div class="benefit">
+                    <h5>Price: <span id="price"></span></h5>
+                    <table>
+                      <tr>
+                        <th>Benefits:</th>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td id="one">Website Ads</td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td id="two">Free Meal</td>
+                      </tr>
+      
+                      <tr>
+                        <td></td>
+                        <td id="three">Website Ads</td>
+                      </tr>
+                    </table>
+                </div>
+ -->
+                  <label class="top">Business/Oganization Description<textarea type="text" id="description" name="description"></label>
+                <input type="hidden" id="timeStamp" name="timeStamp" value=""/>
+            </fieldset>        
+                
+            <input type="submit" value="Join the Chamber" class="submitBtn">
+
+        </form>
+
+    </main>
+
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Yenagoa Chamber of Commerce | Deinmoere Alafegha-Quakumey | A WDD 230 Project | </p>
+        <p id="lastModified"></p>        
+        <div class="social">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.png" alt="fb icon">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/twitter.png" alt="twitter icon">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.png" alt="instagram icon">
+            </a>
+        </div>
+    </footer>
+
+    <script src="scripts/getDate.js"></script>
+</body>
+
+</html>
