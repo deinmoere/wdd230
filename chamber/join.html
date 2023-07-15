@@ -23,66 +23,72 @@
         </a>
         <nav>
             <ul class="navigation">
-                <li><a href="#" class="active">Home</a></li>             
-                <li><a href="chamber.html">Discover</a></li>
-                <li><a href="https://deinmoere.github.io/wdd230/week01/chamber-site-plan.html">Directory</a></li>
-                <li><a href="form.html">Membership</a></li>
+                <li><a href="https://deinmoere.github.io/wdd230/chamber/index.html" class="active">Home</a></li>             
+                <li><a href="https://deinmoere.github.io/wdd230/chamber/discover.html">Discover</a></li>
+                <li><a href="https://deinmoere.github.io/wdd230/chamber/directory.html">Directory</a></li>
+                <li><a href="https://deinmoere.github.io/wdd230/chamber/join.html">Membership</a></li>
             </ul>
-<!--             <button id="menu"></button>
-            <a href="index.html">Home</a>
-            <a href="#">Discover</a>
-            <a href="site-plan-rafting.html">Directory</a>
-            <a class='join' href="membership.html">MEMBERSHIP</a> -->
         </nav>
         
-        <!-- <div id="mode">
-            ✅
-        </div> -->
     </header>
 
-    <main>
-        <h1>Yenagoa Chamber Application Form</h1>
+    <main id="formMain">
+        <!-- <h1>Yenagoa Chamber Application Form</h1> -->
         <form method="get" action="thankyou.html">
             <fieldset>
-<!--                 <legend>Applicant Information</legend>-->                
+                <legend>Applicant Information</legend>                
                 <label class="top">First Name*<input type="text" id="fname" name="fname" required></label>
                 <label class="top">Last Name*<input type="text" id="lname" name="lname" required></label>
                 <label class="top">Position in Company<input type="text" id="position" name="position" pattern="[A-Za-z\s\-]{7,}"></label>
                 <label class="top">Email<input type="email" id="email" name="email" placeholder="someone@gmail.com" required></label>
                 <label class="top">Phone Number<input type="tel" id="phone" name="phone" placeholder="1235551234" required></label>
-                <label class="top">Business/Oganization Name<input type="text" id="business" name="business" required></label>
                 
-                <div>Membership Level</div>
-                <label class="sbs"><input type="radio" name="level" value="nonProfit">NP Membership</label>
-                <label class="sbs"><input type="radio" name="level" value="bronze">Bronze Membership</label>
-                <label class="sbs"><input type="radio" name="level" value="silver">Silver Membership</label>
-                <label class="sbs"><input type="radio" name="level" value="gold">Gold  Membership</label>
-
-                <!-- <div class="benefit">
-                    <h5>Price: <span id="price"></span></h5>
-                    <table>
-                      <tr>
-                        <th>Benefits:</th>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td></td>
-                        <td id="one">Website Ads</td>
-                      </tr>
-                      <tr>
-                        <td></td>
-                        <td id="two">Free Meal</td>
-                      </tr>
-      
-                      <tr>
-                        <td></td>
-                        <td id="three">Website Ads</td>
-                      </tr>
-                    </table>
+            </fieldset>
+            <fieldset>                
+                <legend>Membership Level</legend>
+                <div>
+                    <div>Choose your Membership</div>
+                    <label class="sbs"><input type="radio" name="level" value="nonProfit">NP Membership</label>
+                    <label class="sbs"><input type="radio" name="level" value="bronze">Bronze Membership</label>
+                    <label class="sbs"><input type="radio" name="level" value="silver">Silver Membership</label>
+                    <label class="sbs"><input type="radio" name="level" value="gold">Gold  Membership</label>
                 </div>
- -->
-                  <label class="top">Business/Oganization Description<textarea type="text" id="description" name="description"></label>
-                <input type="hidden" id="timeStamp" name="timeStamp" value=""/>
+                <div id="infoMemberShip">
+                    <section>
+                        <h3>Np Membership [Free]</h3>
+                        <ul>                            
+                            <li>For non-profit organizations</li>
+                            <li>Will enjoy all of our membership benefits</li>                        
+                    </section>
+                    <section>
+                        <h3>Bronze Membership [$200]</h3>
+                        <ul>                            
+                            <li>Referrals to potential customers</li>
+                            <li>Free riborn cutting & promotion</li>                            
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Silver Membership [$300]</h3>
+                        <ul>
+                            <li>All the benefits of Bronze Membership</li>
+                            <li>Affinity Programs</li>                            
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Golden Membership [$500]</h3>
+                        <ul>
+                            <li>All the benefits Silver Memberships</li>
+                            <li>Free job postings</li>                            
+                        </ul>
+                    </section>
+
+                </div>                
+            </fieldset>
+            <fieldset>
+                <legend>Business Description</legend>
+                <label class="top">Business/Oganization Name<input type="text" id="business" name="business" required></label>
+                <label class="top">Business/Oganization Description<textarea type="text" id="description" name="description"></textarea></label>
+                    <input type="hidden" id="timeStamp" name="timeStamp" value=""/>
             </fieldset>        
                 
             <input type="submit" value="Join the Chamber" class="submitBtn">

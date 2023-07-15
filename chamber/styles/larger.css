@@ -200,6 +200,11 @@
 } */
 
 /* -------FORMS------ */
+.top textarea {
+    width: 100%;
+    padding: 1rem;
+    height: 7rem;
+}
 form label.sbs {
     padding: .4rem 0;
   }
