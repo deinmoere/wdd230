@@ -50,3 +50,15 @@ numVisits++;
 
 // 5️⃣ store the new visit total into localStorage, key=numVisits-ls
 localStorage.setItem("numVisits-ls", numVisits);
+
+/* -------form.html------- */
+const rangevalue = document.getElementById("rangevalue");
+const range = document.getElementById("rating");
+
+// RANGE event listener
+range.addEventListener('change', displayRatingValue);
+range.addEventListener('input', displayRatingValue);
+
+function displayRatingValue() {
+    rangevalue.innerHTML = range.value;
+}

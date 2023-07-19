@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Activity - Form</title>
+    <link rel="stylesheet" href="styles/form.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+    
+</head>
+<body>
+    <header>
+        <img class="profile" src="images/myphoto.webp" alt="My profile picture" >
+        <h1> Deinmoere H. A. Alafegha-Quakumey</h1>
+        <div id="mode">
+            ✅
+        </div>
+    </header>
+
+    
+
+    <nav>
+        <button id="menu"></button>
+        <ul class="navigation">
+            <li><a href="#" class="active">Home</a></li>             
+            <li><a href="https://deinmoere.github.io/wdd230/chamber/index.html">Chamber</a></li>
+            <li><a href="https://deinmoere.github.io/wdd230/week01/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="https://deinmoere.github.io/wdd230/form.html">Form</a></li>
+        </ul>
+        
+    </nav>
+ 
+    <!-- <main id="teamForm">
+        <h1 class="title">Team Activity - Form</h1>
+        <form method="get" action="record.html">
+            <fieldset>
+                <legend> Information</legend>
+                <label class="top">Username*<input type="text" name="username" required></label>
+                <div id="recordMessage"></div><br>
+                <label class="top">Password*<input type="password" id="password" name="password" pattern="^[a-zA-Z0-9]{8,}$" placeholder="At least 8 characters" title="Password must be at least eight (8) characters long and can only be alpha-numeric" required></label>
+                <label class="top">Re-enter Password*<input type="password" id="password2" name="password2" pattern="^[a-zA-Z0-9]{8,}$" title="Password must be at least eight (8) characters long and can only be alpha-numeric" required></label>
+                <label class="top">Email*<input type="email" id="email" name="email" placeholder="someone@gmail.com" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address" required></label>
+                <label class="top">Page Rating <br><output id="rangevalue">5</output> <input type="range" id="rating" name="rating"  min="1" max="10" oninput="output.value = rating.value" step="1" list="rangevalues"></label>
+                
+                <datalist id="rangevalues">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </datalist>                
+            </fieldset> 
+
+        <input type="submit" value="Send your Rating" class="submitBtn">
+    </main> -->
+    <main>
+        <form method="get" action="record.html">
+            <legend id="legend">Information</legend>
+           
+            <label class="top">Username* <input type="text" id="username" name="username" required></label>
+             <div id="recordMessage"></div> <br>
+            <label class="top">Password* <input type="password" id="password" name="password" pattern="[A-Za-z0-9]{8,}" required></label>
+            <label class="top">Confirm Password* <input type="password" id="password2" name="password2" pattern="[A-Za-z0-9]{8,}" required></label>
+            <label class="top">Email* <input type="email" id="mail" name="mail" required pattern="[a-zA-Z0-9._%+\-]+@byui\.edu$" placeholder="Please enter a valid email address"></label>
+            
+            <label class="top">Page Rating<br><span id="rangeValue">0</span><input type="range" name="rating" id="rating" min="0" max="10" value="0" step="1" list="rangevalues"></label>
+            <datalist id="rangevalues">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </datalist>
+            <input type="submit" value="Rate the page" id="submitBtn">
+        </form>
+
+
+
+    </main>
+
+    <footer>
+        <p> &copy; <span id="currentYear"></span> 🌸 Deinmoere Alafegha-Quakumey 🌸 Ghana</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/form.js"></script>
+</body>
+</html>

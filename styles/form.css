@@ -1,0 +1,366 @@
+:root{
+    --margin-value: 2rem;
+    --max-width: 20rem;
+    --padding: 0.75rem;
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+main h1{
+    font-size: 2rem;
+    color: black;
+}
+
+form{
+    width: 60%;
+    border: 2px solid blue;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin: 0 auto;
+    margin-top: var(--margin-value);
+    
+}
+
+#rating {
+    width: 100%;
+    max-width: var(--max-width);
+	margin-bottom: 0;
+    padding: var(--padding);
+}
+#rangevalues {
+	display: flex;
+    margin-left: 0.8rem;
+
+}
+
+#rangevalues option {
+	flex: 1 1 auto;
+}
+
+form label.top{
+    display: block;
+    margin-bottom: var(--margin-value);
+}
+
+form label.top input{
+    display: block;
+    padding: var(--padding);
+    width: 100%;
+    max-width: var(--max-width);
+    border: 1px solid #999;
+    border-radius: 4px;
+}
+
+form label.top input:required{
+    border-left: red solid 6px;
+}
+
+form label.top input:required:valid{
+    border-left: green 6px;
+}
+
+legend{
+    margin-bottom: var(--margin-value);
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+form label.top #rating {
+    padding: var(--padding);
+    margin-bottom: -2rem;
+    width: 100%;
+    max-width: var(--max-width);
+}
+
+#submitBtn{
+    margin-top: var(--margin-value);
+    padding: var(--padding) 1.5rem;
+    width: 100%;
+    max-width: var(--max-width);
+    border: none;
+    border-radius: 10px;
+    background: #072E74;
+    color: white;
+}
+
+#recordMessage{
+    display: none;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+#rangeValue{
+    margin-top: 0.3rem;
+    font-size: 1.4rem;
+}
+
+#recordMessage h1{
+    color: white;
+    margin: 0 auto;
+    margin-top: 5rem;
+    background: #072E74;
+    width: 80%;
+    border-radius: 10px;
+}
+
+#recordMessage p{
+    margin: 0 auto;
+    font-size: 2rem;
+    margin-bottom: 12rem;
+    margin-top: var(--margin-value);
+    text-align: center;
+}
+
+/* @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;800&family=Paytone+One&display=swap');
+:root {
+    --main-color: #643A71;
+    --display: block;
+    --font-family: 'Nanum Myeongjo', serif;
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+main h1{
+    font-size: 2rem;
+    color: black;
+}
+
+form{
+    width: 60%;
+    border: 2px solid blue;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+    
+}
+.title {
+    margin: 0;
+    color: black;
+    text-align: center;
+}
+
+
+  form fieldset {    
+    margin: 2rem 0;
+    border: 1px solid var(--main-color);
+    border-radius: 10px;
+    padding: .5rem 2%;
+    font-family: var(--font-family);
+}
+form legend {
+    color: var(--main-color);
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+form label.top{
+    display: var(--display);
+    padding-top: 1rem;
+    color: var(--main-color);
+    font-size: .8rem;
+}
+
+form label.top input {
+    -webkit-appearance: none;
+    display:var(--display);
+    font-size: 1rem;
+    border: solid 1px #999;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+form label.sbs {
+    display: var(--display);
+    padding: .75rem 0;
+    color: #555;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: var(--main-color);    
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    max-width: 20rem;    
+    font-family:var(--font-family) ;
+}
+
+form label.top input:required {
+    border-left: red solid 6px;
+}
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
+ */
+
+  
+/* :root{
+    --main-color: #643A71;    
+    --font-family: 'Nanum Myeongjo', serif;
+    --margin-value: 2rem;
+    --max-width: 20rem;
+    --padding: 0.75rem;
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+main h1{
+    font-size: 2rem;
+    color: black;
+}
+
+form fieldset {    
+    margin: 2rem 0;
+    border: 1px solid var(--main-color);
+    border-radius: 10px;
+    padding: .5rem 2%;
+    font-family: var(--font-family);
+}
+form{
+    width: 60%;
+    
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin: 0 auto;
+    margin-top: var(--margin-value);
+    
+}
+
+#rating {
+    width: 100%;
+    max-width: var(--max-width);
+	margin-bottom: 0;
+    padding: var(--padding);
+}
+#rangevalues {
+	display: flex;
+    margin-left: 0.8rem;
+
+}
+
+#rangevalues option {
+	flex: 1 1 auto;
+}
+
+form fieldset {    
+    margin: 2rem 0;
+    border: 1px solid var(--main-color);
+    border-radius: 10px;
+    padding: .5rem 2%;
+    font-family: var(--font-family);
+}
+form legend {
+    color: var(--main-color);
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+form label.top{
+    display: var(--display);
+    padding-top: 1rem;
+    color: var(--main-color);
+    font-size: .8rem;
+}
+
+form label.top input {
+    -webkit-appearance: none;
+    display:var(--display);
+    font-size: 1rem;
+    border: solid 1px #999;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+form label.sbs {
+    display: var(--display);
+    padding: .75rem 0;
+    color: #555;
+}
+
+form label.top{
+    display: block;
+    margin-bottom: var(--margin-value);
+}
+
+form label.top input{
+    display: block;
+    padding: var(--padding);
+    width: 100%;
+    max-width: var(--max-width);
+    border: 1px solid #999;
+    border-radius: 4px;
+}
+
+form label.top input:required {
+    border-left: red solid 6px;
+}
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
+
+legend{
+    margin-bottom: var(--margin-value);
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+form label.top #rating{
+    padding: var(--padding);
+    margin-bottom: -2rem;
+    width: 100%;
+    max-width: var(--max-width);
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: var(--main-color);    
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    max-width: 20rem;    
+    font-family:var(--font-family) ;}
+
+#formMessage{
+    display: none;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+#rangevalue{
+    margin-top: 0.3rem;
+    font-size: 1.4rem;
+}
+
+#message h1{
+    color: white;
+    margin: 0 auto;
+    margin-top: 5rem;
+    background: #072E74;
+    width: 80%;
+    border-radius: 10px;
+}
+
+#message p{
+    margin: 0 auto;
+    font-size: 2rem;
+    margin-bottom: 12rem;
+    margin-top: var(--margin-value);
+    text-align: center;
+} */
