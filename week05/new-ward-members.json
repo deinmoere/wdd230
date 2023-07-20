@@ -1,0 +1,32 @@
+{
+    "familyName": "Alafegha-Quakumey",
+    "moved": "July 15 2022",
+    "numMembers": 4,
+    "visited": false,
+    "members": [
+        {
+            "name": "Alafegha Fekoweimo Quakumey",
+            "gender": "male",
+            "birthDate": "01/02/1966"
+        },
+
+        {
+            "name": "Rosemary Komare Alafegha-Quakumey",
+            "gender": "female",
+            "birthDate": "07/04/1972"
+        },
+
+        {
+            "name": "Deinmoere Hazel Ami Alafegha-Quakumey",
+            "gender": "female",
+            "birthDate": "03/07/1999"
+        },
+
+        {
+            "name": "Teidor Chloe Enyonam Alafegha-Quakumey",
+            "gender": "female",
+            "birthDate": "26/10/2002"
+        }
+
+    ]
+}
