@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Diphylleia');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,300&display=swap');
+
+header, footer{
+    text-align: center;
+}
+
+h1, h2 {
+    font-family: 'Diphylleia', serif;
+    color: rgb(35, 35, 129);
+}
+
+h1 {
+    padding: 1rem;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    margin: 1rem;
+    padding: 1rem;
+    box-shadow: 0 0 30px #777;
+    font-family: 'Roboto', sans-serif;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem;
+    padding: 2.5rem;
+    background-color: rgb(160, 160, 198);
+    border: 1px solid rgb(36, 36, 130);
+}
+
+section p {
+    line-height: 1.5rem;
+}
+
+img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.575), 0 8px 20px 0 rgba(0, 0, 0, 0.664);
+}
+
+footer {
+    font-family: 'Diphylleia', serif;
+    font-size: 2rem;
+    color: rgb(36, 36, 130);
+    margin: 1rem;
+    padding: 1rem;
+}
+
