@@ -161,3 +161,79 @@ day = (day <= 9) ? '0' + day : day;
 month = (month <= 9) ? '0' + month : month;
 
 document.querySelector("#timeStamp").value = `${day}.${month}.${years}..${hour}.${minutes}.${sec}`;
+
+/* ---------Directory-------- */
+
+const baseURL = 'https://deinmoere.github.io/wdd230/chamber/';
+const linksURL = 'https://deinmoere.github.io/wdd230/chamber/data/members.json';
+const listItems = document.querySelector('.gridItems');
+
+async function fetchLinks(){
+    try {
+        const response = await fetch(linksURL);
+        if (response.ok) {
+            const data = await response.json();
+            displayCards(data);
+        } else {
+            throw Error(await response.text());
+        }
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+function displayCards(data){
+    data.directory.forEach(member => {
+        let section = document.createElement('section');
+        let nameMember = document.createElement('h4');
+        let addressMember = document.createElement('p');
+        let phoneMember = document.createElement('p');
+        let urlMember = document.createElement('a');
+        let imgMember = document.createElement('img');
+        let membership = document.createElement('p');
+        
+        nameMember.innerHTML = `${member.name}`
+        imgMember.setAttribute('src', member.image);
+        imgMember.setAttribute('alt', member.name);
+        imgMember.setAttribute('loading', 'lazy');
+        imgMember.setAttribute('width', '160');
+        imgMember.setAttribute('height', '160');
+        addressMember.innerHTML = `${member.address}`;
+        phoneMember.innerHTML = `${member.phone}`;
+        urlMember.innerHTML = `${member.website}`;
+        urlMember.setAttribute('href', member.website);
+        membership.innerHTML = `Membership: ${member.membership_level}`;
+        
+        section.appendChild(imgMember);
+        section.appendChild(nameMember);
+        section.appendChild(addressMember);
+        section.appendChild(phoneMember);
+        section.appendChild(urlMember);
+        section.appendChild(membership);
+        
+
+        listItems.appendChild(section);
+    });
+}
+
+fetchLinks();
+
+
+// functionality for the buttons
+const gridbtn = document.querySelector("#grid");
+const listbtn = document.querySelector("#list");
+const display = document.querySelector("article");
+
+
+gridbtn.addEventListener("click", () => {
+	
+	display.classList.add("gridItems");
+	display.classList.remove("listItems");
+});
+
+listbtn.addEventListener("click", showList); 
+
+function showList() {
+	display.classList.add("listItems");
+	display.classList.remove("gridItems");
+}

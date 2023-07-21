@@ -383,3 +383,96 @@ form label.top input:required {
 form label.top input:required:valid {
     border-left: green solid 6px;
 }
+
+
+/* ---------Directory--------- */
+#directory{
+    text-align: center;
+    margin-top: 1rem;
+}
+
+#directory button{
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+}
+
+.gridItems{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.gridItems section{
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+    border: 2px solid #072e74;
+    padding: 1rem;
+    background: #d9dbe0;
+    border-radius: 10px;
+}
+
+.gridItems section a{
+    color: #0025b8;
+}
+
+.gridItems section img{
+    width: 50%;
+    margin: 0 auto;
+    height: auto;
+}
+
+.gridItems section h4{
+    padding: 0.7rem;
+    color: #072E74;
+}
+
+.gridItems section p{
+    font-family: 'Merriweather Sans', serif;
+    margin: 0.5rem;
+}
+
+.listItems{
+    display: flex;
+    flex-direction: column;
+}
+
+.listItems img{
+    display: none;
+}
+
+.listItems section{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.listItems section h4{
+    text-align: start;
+}
+
+.listItems section p{
+    margin: 0.2rem;
+    text-align: start;
+}
+
+.listItems section:nth-child(odd) {
+    background-color: #072E74;
+    color: #fff;
+}
+
+.listItems section:nth-child(even) {
+	background-color: #c5c8ce;
+}
+
+.listItems section:nth-child(odd) a{
+    color: #f3ef04;
+}
+
+.listItems section:nth-child(even) a{
+    color: #00154b;
+}

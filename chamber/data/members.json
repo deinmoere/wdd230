@@ -1,0 +1,105 @@
+{
+    "directory": [
+      {
+        "name": "ABC Technologies",
+        "address": "123 Main Street, Cityville",
+        "phone": "+1 (555) 123-4567",
+        "website": "https://www.abc-tech.com",
+        "image": "abc-tech-logo.png",
+        "membership_level": "Gold",
+        "motto": "Innovate. Transform. Succeed.",
+        "email": "info@abc-tech.com"
+      },
+      {
+        "name": "XYZ Solutions",
+        "address": "456 Park Avenue, Townsville",
+        "phone": "+1 (555) 987-6543",
+        "website": "https://www.xyz-solutions.com",
+        "image": "xyz-solutions-icon.png",
+        "membership_level": "Silver",
+        "motto": "Solving Problems, Delivering Solutions.",
+        "email": "contact@xyz-solutions.com"
+      },
+      {
+        "name": "TechCorp Solutions",
+        "address": "555 Innovation Lane, Techville",
+        "phone": "+1 (555) 777-8888",
+        "website": "https://www.techcorp-solutions.com",
+        "image": "techcorp-logo.png",
+        "membership_level": "Platinum",
+        "motto": "Empowering Your Future with Technology.",
+        "email": "hello@techcorp-solutions.com"
+      },
+      {
+        "name": "GlobeTech Systems",
+        "address": "100 Global Way, Earth City",
+        "phone": "+1 (555) 444-5555",
+        "website": "https://www.globetech-systems.com",
+        "image": "globetech-icon.png",
+        "membership_level": "Gold",
+        "motto": "Connecting the World with Technology.",
+        "email": "contact@globetech-systems.com"
+      },
+      {
+        "name": "FutureTech Innovations",
+        "address": "2035 Tomorrow Blvd, Futurville",
+        "phone": "+1 (555) 909-1234",
+        "website": "https://www.futuretech-innovations.com",
+        "image": "futuretech-logo.png",
+        "membership_level": "Silver",
+        "motto": "Creating Tomorrow's Solutions Today.",
+        "email": "info@futuretech-innovations.com"
+      },
+      {
+        "name": "CyberSolutions Inc.",
+        "address": "800 Cyber Ave, Cyberville",
+        "phone": "+1 (555) 222-2222",
+        "website": "https://www.cybersolutions-inc.com",
+        "image": "cybersolutions-logo.png",
+        "membership_level": "Bronze",
+        "motto": "Securing Your Digital World.",
+        "email": "contact@cybersolutions-inc.com"
+      },
+      {
+        "name": "TechGenius Group",
+        "address": "123 Genius Street, Geniustown",
+        "phone": "+1 (555) 987-6543",
+        "website": "https://www.techgenius-group.com",
+        "image": "techgenius-icon.png",
+        "membership_level": "Platinum",
+        "motto": "Unlocking the Genius Within Technology.",
+        "email": "info@techgenius-group.com"
+      },
+      {
+        "name": "Superior Systems",
+        "address": "789 Superior Road, Superville",
+        "phone": "+1 (555) 777-1234",
+        "website": "https://www.superior-systems.com",
+        "image": "superior-systems-logo.png",
+        "membership_level": "Gold",
+        "motto": "Engineering Excellence for You.",
+        "email": "contact@superior-systems.com"
+      },
+      {
+        "name": "MegaTech Enterprises",
+        "address": "555 Mega Blvd, Megatown",
+        "phone": "+1 (555) 444-9999",
+        "website": "https://www.megatech-enterprises.com",
+        "image": "megatech-icon.png",
+        "membership_level": "Silver",
+        "motto": "Powering the Future with Innovation.",
+        "email": "hello@megatech-enterprises.com"
+      },
+      {
+        "name": "TechNexus Inc.",
+        "address": "567 Nexus Street, Technopolis",
+        "phone": "+1 (555) 123-9876",
+        "website": "https://www.technexus-inc.com",
+        "image": "technexus-logo.png",
+        "membership_level": "Bronze",
+        "motto": "Connecting Ideas, Building Synergy.",
+        "email": "info@technexus-inc.com"
+      }
+    ]
+  }
+  
