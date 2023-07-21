@@ -1,3 +1,4 @@
+/* -------------Current Year---------------- */
 // declare and instantiate a variable to hold the current year
 const currentYear = 2023;
 
@@ -8,6 +9,8 @@ let currentdate = document.lastModified;
         // document.getElementById('modified').textContent = 'Last Updated: '+ currentdate + '.';
 document.getElementById('lastModified').textContent = `Last Updated ${currentdate} . `;
 
+
+/* ----------Dark mode--------- */
 const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
 
@@ -32,6 +35,8 @@ modeButton.addEventListener("click", () => {
 	}
 });
 
+/* -------Visit Count------- */
+
 // 1️⃣ Initialize display element variable
 const visitsDisplay = document.querySelector("#pageVisit");
 
@@ -51,6 +56,7 @@ numVisits++;
 // 5️⃣ store the new visit total into localStorage, key=numVisits-ls
 localStorage.setItem("numVisits-ls", numVisits);
 
+
 /* -------form.html------- */
 const rangevalue = document.getElementById("rangevalue");
 const range = document.getElementById("rating");
@@ -62,6 +68,10 @@ range.addEventListener('input', displayRatingValue);
 function displayRatingValue() {
     rangevalue.innerHTML = range.value;
 }
+
+
+
+
 /* -------------Weather API-------------- */
 
 const url = 'https://api.openweathermap.org/data/2.5/weather?lat=5.62&lon=-0.08&units=imperial&appid=84887fd1e98f2909b5621a6c5dfe03f3';

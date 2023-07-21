@@ -31,7 +31,7 @@ function displayLinks(data){
             counter++;
 
         })
-        listItems.appendChild(liItem);
+        listItems.appendChild(ulList);
     });
 }
 
