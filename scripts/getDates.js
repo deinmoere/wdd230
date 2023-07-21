@@ -62,3 +62,35 @@ range.addEventListener('input', displayRatingValue);
 function displayRatingValue() {
     rangevalue.innerHTML = range.value;
 }
+/* -------------Weather API-------------- */
+
+const url = 'https://api.openweathermap.org/data/2.5/weather?lat=5.62&lon=-0.08&units=imperial&appid=84887fd1e98f2909b5621a6c5dfe03f3';
+const currentTemp = document.querySelector('#currentTemperature');
+const weatherIcon = document.querySelector('#weather-icon');
+const caption = document.querySelector('figcaption');
+
+async function apiFetch(){
+    try {
+        const response = await fetch(url);
+        if (response.ok) {
+            const data = await response.json();
+            displayWeather(data);
+        } else {
+            throw Error(await response.text());
+        }
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+function displayWeather(data){
+    currentTemp.innerHTML = `${data.main.temp}&deg;F`;
+    const imgSrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`
+    let desc = data.weather[0].description;
+    weatherIcon.setAttribute('src', imgSrc);
+    weatherIcon.setAttribute('alt', 'weatherIcon');
+    caption.textContent = `${desc}`;
+ 
+}
+
+apiFetch();

@@ -29,7 +29,6 @@
     </header>
 
     
-
     <nav>
         <button id="menu"></button>
         <ul class="navigation">
@@ -56,9 +55,9 @@
         <hr>
         <section class="card" id="activities">
             <h3>Learning Activities</h3>
-            <ul>
-                <li>Week 01: 
-                    <!-- <a href="week01/chamber-site-plan.html"> HolyGrail</a> | -->
+            <ul id="links">
+                <!-- <li>Week 01: 
+                    <a href="week01/chamber-site-plan.html"> HolyGrail</a> |
                     <a href="https://deinmoere.github.io/wdd230/week01/holygrail.html"> Layout</a> |
                     <a href="https://deinmoere.github.io/wdd230/week01/media-query.html"> Media Query</a> |
                     <a href="https://deinmoere.github.io/wdd230/week01/chamber-site-plan.html"> Chamber Site Plan </a>
@@ -88,8 +87,7 @@
                     <a href="https://deinmoere.github.io/wdd230/week05/new-ward-members.json">JSON</a> |
                     <a href="https://deinmoere.github.io/wdd230/week05/prophets.html">Fetch API</a> |
                     <a href="https://deinmoere.github.io/wdd230/week05/weather.html">Weather API</a>
-                </li>
-                <!-- <li>Week 06: <a href="#"></a></li> -->
+                </li> -->                
             </ul>
         </section>
 
@@ -97,7 +95,12 @@
             <h3>Information</h3>      
             <nav id="displayItems">
                 <nav>Accra, Ghana</nav>
-                <nav><span id="currentTemperature"></span>Temperature</nav>
+                <figure>
+                    <img id="weather-icon" src="" alt="">
+                    <span id="currentTemperature"></span>
+                    <figcaption></figcaption>
+                </figure>
+                
                 <nav>Visit Count: <span id="pageVisit"></span></nav>
             </nav>      
                         
@@ -111,6 +114,7 @@
     </footer>
 
     <script src="scripts/getDates.js"></script>
+    <script src="scripts/links.js"></script>
     
 </body>
 </html>
