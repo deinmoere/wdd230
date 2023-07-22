@@ -227,13 +227,13 @@ const display = document.querySelector("article");
 
 gridbtn.addEventListener("click", () => {
 	
-	display.classList.add("gridItems");
-	display.classList.remove("listItems");
+	display.classList.add("grid");
+	display.classList.remove("list");
 });
 
 listbtn.addEventListener("click", showList); 
 
 function showList() {
-	display.classList.add("listItems");
-	display.classList.remove("gridItems");
+	display.classList.add("list");
+	display.classList.remove("grid");
 }
