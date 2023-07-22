@@ -34,15 +34,16 @@
     </header>
     <div id="hero">
         <div id="hero-box">
-            <img id="hero-img" src="images/hero-image.jpeg" alt="Ekeki Flyover Bridge">
+            <source srcset="images/hero-image-small.webp" media="(max-width: 500px)">
+            <img src="images/hero-image-large.webp" alt="Ekeki Flyover Bridge" loading="lazy" width="1250" height="400">            
         </div>
 
         <section id="hero-msg">
             <h1 class="home-title">The Chamber</h1>
             <h4>Commerce // Development // Innovation </h4>
             <div class='button-box'>
-                <button class='read' href="https://deinmoere.github.io/wdd230/chamber/join.html">Join</button>
-                <button class='view' href="rates.html">Events</button>
+                <button class='read'  onclick="window.location.href='https://deinmoere.github.io/wdd230/chamber/join.html';">Join</button>
+                <button class='view'  onclick="window.location.href='https://deinmoere.github.io/wdd230/chamber/discover.html';">Events</button>
             </div>
         </section> 
     </div>
@@ -50,7 +51,7 @@
     <main class="home-grid">
         <div class="banner">
             <div class="banner-content">
-                <p class="banner-text"><strong>Remainder</strong> We will have our weekly meet and greet on Wednesday 7:00 PM, come and participate you're welcome to join us</p>
+                <h4 class="banner-text"><strong>Our weekly meet and greet is on Wednesday at 7:00 PM, see you there!</strong> </h4>
                 <button class="banner-button">
                     <span class="material-icons">close</span>
                 </button>
@@ -82,11 +83,41 @@
             <hr>     
             <nav id="displayItems">
                 <nav>Bayelsa, Nigeria</nav>
-                    <nav>Humidity : <span id="humidity"></span></nav>
-                    <nav>Wind Chill : <span id="windChill"></span></nav>
+                <h5>Today</h5>
+                <figure>
+                    <img id="weather-icon-today" src="#" alt="empty">
+                    <div id="current-temp"></div>
+                    <figcaption id="todayCaption"></figcaption>
+                </figure>
+                <h5>Forecast</h5>
+                <figure>
+                    <img id="weather-icon-forecast" src="#" alt="empty">
+                    <div id="forecast-temp"></div>
+                    <figcaption id="forecastCaption"></figcaption>
+                </figure>
+                    
             </nav>      
                         
         </section>
+        <!-- <div id="weather">
+            <div id="today-weather">
+                <h5>Today Weather</h5>
+                <figure>
+                    <img id="weather-icon-today" src="#" alt="empty">
+                    <div id="current-temp"></div>
+                    <figcaption id="todayCaption"></figcaption>
+                </figure>
+            </div>
+
+            <div id="forecast-weather">
+                <h5>Forecast Weather</h5>
+                <figure>
+                    <img id="weather-icon-forecast" src="#" alt="empty">
+                    <div id="forecast-temp"></div>
+                    <figcaption id="forecastCaption"></figcaption>
+                </figure>
+            </div>
+        </div> -->
 
         <section class="msg">
                 

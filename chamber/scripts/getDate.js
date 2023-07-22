@@ -32,59 +32,159 @@ modeButton.addEventListener("click", () => {
 	}
 });
 
-// Script for Number of Visits
-//let numVisits = document.querySelector('.daysOfVisit');
+/***********************WeatherToday*********************/
 
-//Script for displaying the number of days on Discover page
+const currentTemp = document.querySelector('#current-temp');
+const weatherIcon = document.querySelector('#weather-icon-today');
+const captionDesc = document.querySelector('#todayCaption');
 
-/* let numOfVisits = Number(window.localStorage.getItem("visits"));
-let lastVisit= Number(window.localStorage.getItem("lastVisits"));
+const url = 'https://api.openweathermap.org/data/2.5/weather?lat=4.95&lon=6.34&units=imperial&appid=84887fd1e98f2909b5621a6c5dfe03f3';
 
-const FACTOR = 1000 * 60 * 60 * 24;
+async function apiFetch(){
+    try {
+        const response = await fetch(url);
+        if (response.ok) {
+            const data = await response.json();
+            displayResults(data);
+        }else{
+            throw Error(await response.text());
+        }
 
-let daysBetween = Date.now() - lastVisit;
+    } catch (error) {
+        console.log(error);
+    }
 
-let numOfDays = Math.ceil(daysBetween / FACTOR);
-
-localStorage.setItem("lastVisits", Date.now());
-
-if (numOfVisits !== 0) {
-	numVisits.textContent = "Welcome! Let us know if you have any questions."    
-} 
-
-else {
-	numVisits.textContent = "You last visited"  + numOfDays + "days ago."    
-}
- */
-/* numOfVisits++;
-// store the new number of visits value
-localStorage.setItem("visits", numOfVisits); */
-
-// Days since last visit
-
-let todays = Date.now();
-
-// initialize display elements
-const visitsDisplay = document.querySelector(".daysOfvisits");
-
-// get the stored value in localStorage
-let lastVisit = Number(window.localStorage.getItem("visits-ls"));
-
-// determine if this is the first visit or display the number of visits.
-if (lastVisit > 0) {
-    let visitGap = Math.abs(todays - lastVisit) / 1000;
-    days = Math.floor(visitGap / 86400);
-    visitsDisplay.textContent = "You last visited"  + days + "days ago.";
-} else {
-    visitsDisplay.textContent = "Welcome! Let us know if you have any questions.";
 }
 
-// store the new number of visits value
-localStorage.setItem("visits-ls", todays);
 
+function displayResults(data){
+    currentTemp.innerHTML = `${data.main.temp}&deg;F`
+    const imgSrc = ` https://openweathermap.org/img/w/${data.weather[0].icon}.png`
+    let desc = data.weather[0].description;
+
+    weatherIcon.setAttribute('src', imgSrc);
+    weatherIcon.setAttribute('alt', 'weatherIcon');
+    captionDesc.textContent = desc;
+}
+
+apiFetch();
+
+/************************ForecastWeather********************/
+const forecastTemp = document.querySelector('#forecast-temp');
+const forecastIcon = document.querySelector('#weather-icon-forecast');
+const forecastCaption = document.querySelector('#forecastCaption');
+
+const forecastUrl = 'https://api.openweathermap.org/data/2.5/forecast?lat=4.95&lon=6.34&units=imperial&appid=84887fd1e98f2909b5621a6c5dfe03f3';
+
+async function apiFetchForecast(){
+	try {
+        const response = await fetch(forecastUrl);
+        if (response.ok) {
+            const data = await response.json();
+			displayResultsFore(data);
+        }else{
+            throw Error(await response.text());
+        }
+
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+function displayResultsFore(data){
+    forecastTemp.innerHTML = `${data.list[16].main.temp}&deg;F`
+    const imgSrc = ` https://openweathermap.org/img/w/${data.list[16].weather[0].icon}.png`
+    let desc = data.list[16].weather[0].description;
+
+    forecastIcon.setAttribute('src', imgSrc);
+    forecastIcon.setAttribute('alt', 'weatherIcon');
+    forecastCaption.textContent = desc;
+}
+
+
+apiFetchForecast();
+
+
+
+/* ---------Discover-------- */
+const currentDate = document.querySelector(".current-date");
+const months = ["January", "February", "March", "April", "May", "June", "July",
+                "August", "September", "October", "November", "December"];
+const DaysLi = document.querySelector(".days"); 
+const buttons = document.querySelectorAll(".icons span"); 
+
+let date = new Date();
+currYear = date.getFullYear();
+currMonth = date.getMonth();
+
+function displayCalendar(){
+    let firstDayoftMonth = new Date(currYear, currMonth, 1).getDay();
+    let lastDateofMonth = new Date(currYear, currMonth + 1, 0).getDate();
+    let lastDayoftMonth = new Date(currYear, currMonth, lastDateofMonth).getDay();
+    let lastDateofLastMonth = new Date(currYear, currMonth, 0).getDate();
+    let listItems = '';
+
+    for (let i = firstDayoftMonth; i > 0; i--) {
+        listItems += `<li class='inactive'>${lastDateofLastMonth - i + 1}</li>`
+    }
+    for (let i = 1; i <= lastDateofMonth; i++) {
+        let isToday = i === date.getDate() && currMonth === new Date().getMonth() && currYear === new Date().getFullYear() ?
+                     "active" : "";
+        listItems += `<li class='${isToday}'>${i}</li>`
+    }
+
+    for (let i = lastDayoftMonth; i < 6; i++) {
+        listItems += `<li class='inactive'>${i - lastDayoftMonth + 1}</li>`
+    }
+
+    currentDate.innerText = `${months[currMonth]} ${currYear}`
+    DaysLi.innerHTML = listItems;
+}
+
+displayCalendar();
+
+buttons.forEach((button) => {
+    button.addEventListener("click", ()=>{
+        currMonth = button.id === "prev" ? currMonth - 1 : currMonth + 1
+        if (currMonth > 11) {
+            currMonth = 0;
+            currYear += 1;
+        }else if(currMonth < 0){
+            currMonth = 11;
+            currYear-=1;
+        }
+        displayCalendar();
+    })
+})
+
+
+const displayMessage = document.querySelector('.visit h2');
+
+let numVisits = Number(localStorage.getItem('numVisits')) || 0;
+
+let dateOfVisit = Date.now();
+
+
+
+let firstVisit;
+
+if (numVisits === 0){
+    displayMessage.textContent = 'Welcome! Let us know if you have any questions.';
+    localStorage.setItem('dayLastVisit', Date.now());
+} else if(dateOfVisit - Number(localStorage.getItem('dayLastVisit')) >= 86400000){
+    let days = Math.ceil((dateOfVisit - (Number(localStorage.getItem('dayLastVisit'))))/86400000);
+    displayMessage.textContent = `You last visited ${days} days ago.`;
+    localStorage.setItem('dayLastVisit', dateOfVisit);
+} else if(dateOfVisit - Number(localStorage.getItem('dayLastVisit')) < 86400000){
+    displayMessage.textContent = 'Back so soon! Awesome!';
+    localStorage.setItem('dayLastVisit', dateOfVisit)
+}
+
+numVisits++
+localStorage.setItem('numVisits', numVisits);
 
 /* -------FORMS------- */
-const benefitcontainer = document.querySelector(".benefit");
+/* const benefitcontainer = document.querySelector(".benefit");
 
 
 function setDisplay(one, two, three, price) {
@@ -160,13 +260,13 @@ let sec = dt.getSeconds();
 day = (day <= 9) ? '0' + day : day;
 month = (month <= 9) ? '0' + month : month;
 
-document.querySelector("#timeStamp").value = `${day}.${month}.${years}..${hour}.${minutes}.${sec}`;
+document.querySelector("#timeStamp").value = `${day}.${month}.${years}..${hour}.${minutes}.${sec}`; */
 
 /* ---------Directory-------- */
 
 const baseURL = 'https://deinmoere.github.io/wdd230/chamber/';
 const linksURL = 'https://deinmoere.github.io/wdd230/chamber/data/members.json';
-const listItems = document.querySelector('.gridItems');
+const listItems = document.querySelector('.grid');
 
 async function fetchLinks(){
     try {
@@ -209,7 +309,7 @@ function displayCards(data){
         section.appendChild(addressMember);
         section.appendChild(phoneMember);
         section.appendChild(urlMember);
-        section.appendChild(membership);
+        section.appendChild(membership_level);
         
 
         listItems.appendChild(section);

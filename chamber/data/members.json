@@ -1,104 +1,104 @@
 {
     "directory": [
       {
-        "name": "ABC Technologies",
-        "address": "123 Main Street, Cityville",
-        "phone": "+1 (555) 123-4567",
-        "website": "https://www.abc-tech.com",
-        "image": "abc-tech-logo.png",
+        "name": "Gida Concept - Web Design & Digital Agency",
+        "address": "562103, Otuoke, Bayelsa, Nigeria",
+        "phone": "+234 9067841950",
+        "website": "https://www.gidaconcept.com.ng",
+        "image": "images/gida.jpg",
         "membership_level": "Gold",
-        "motto": "Innovate. Transform. Succeed.",
-        "email": "info@abc-tech.com"
+        "motto": "The Best Web Design Agency in Bayelsa State, Nigeria is at Your Service.",
+        "email": "gidatechnologies@gmail.com"
       },
       {
-        "name": "XYZ Solutions",
-        "address": "456 Park Avenue, Townsville",
-        "phone": "+1 (555) 987-6543",
-        "website": "https://www.xyz-solutions.com",
-        "image": "xyz-solutions-icon.png",
+        "name": "Proudly Bayelsan",
+        "address": "65 Azikoro Street, Yenagoa, Bayelsa, Nigeria",
+        "phone": "(+234) 9037073316",
+        "website": "https://www.proudlybayelsan.com",
+        "image": "images/proudly-bayelsan.png",
         "membership_level": "Silver",
         "motto": "Solving Problems, Delivering Solutions.",
-        "email": "contact@xyz-solutions.com"
+        "email": "proudlybayelsan@gmail.com"
       },
       {
-        "name": "TechCorp Solutions",
-        "address": "555 Innovation Lane, Techville",
-        "phone": "+1 (555) 777-8888",
+        "name": "DanitiesTech Integrated services",
+        "address": "Besides custom office Yenezuegene, Yenagoa",
+        "phone": "(+234)7035545177",
         "website": "https://www.techcorp-solutions.com",
-        "image": "techcorp-logo.png",
+        "image": "images/danities-tech.png",
         "membership_level": "Platinum",
         "motto": "Empowering Your Future with Technology.",
-        "email": "hello@techcorp-solutions.com"
+        "email": "techcorp@gmail.com"
       },
       {
-        "name": "GlobeTech Systems",
-        "address": "100 Global Way, Earth City",
-        "phone": "+1 (555) 444-5555",
-        "website": "https://www.globetech-systems.com",
-        "image": "globetech-icon.png",
+        "name": "Big Brother Interiors",
+        "address": "588 Mbiama-Yenegoa road, Yenagoa",
+        "phone": "(+234)7033777344",
+        "website": "http://www.bigbrotherinteriors.com",
+        "image": "images/big-brother.jpg",
         "membership_level": "Gold",
-        "motto": "Connecting the World with Technology.",
-        "email": "contact@globetech-systems.com"
+        "motto": "The best in Furniture Manufacturing.",
+        "email": "bigbrotherinteriors@gmail.com"
       },
       {
-        "name": "FutureTech Innovations",
-        "address": "2035 Tomorrow Blvd, Futurville",
-        "phone": "+1 (555) 909-1234",
-        "website": "https://www.futuretech-innovations.com",
-        "image": "futuretech-logo.png",
+        "name": "Ima Digital Marketing Services",
+        "address": "5 Obele Street,Yenagoa",
+        "phone": "(+234)9081287343",
+        "website": "http://websitelabs.net/",
+        "image": "images/ima-digital.jpg",
         "membership_level": "Silver",
         "motto": "Creating Tomorrow's Solutions Today.",
-        "email": "info@futuretech-innovations.com"
+        "email": "imalabs@gmail.com"
       },
       {
-        "name": "CyberSolutions Inc.",
-        "address": "800 Cyber Ave, Cyberville",
-        "phone": "+1 (555) 222-2222",
-        "website": "https://www.cybersolutions-inc.com",
-        "image": "cybersolutions-logo.png",
+        "name": "Iblog Bayelsa",
+        "address": "Opolo Yenagoa Bayelsa, Yenagoa",
+        "phone": "(+234)8134600071",
+        "website": "http://www.iblogbayelsa.blogspot.com",
+        "image": "images/iblog-bayelsa.jpg",
         "membership_level": "Bronze",
         "motto": "Securing Your Digital World.",
-        "email": "contact@cybersolutions-inc.com"
+        "email": "iblogbayelsa@gmail.com"
       },
       {
-        "name": "TechGenius Group",
-        "address": "123 Genius Street, Geniustown",
-        "phone": "+1 (555) 987-6543",
-        "website": "https://www.techgenius-group.com",
-        "image": "techgenius-icon.png",
+        "name": "Shali global services - Yenagoa",
+        "address": "Amarata, Yenagoa",
+        "phone": "(+234)8113623329",
+        "website": "http://www.shaliglobalservices.com",
+        "image": "images/shali-global.jpg",
         "membership_level": "Platinum",
         "motto": "Unlocking the Genius Within Technology.",
-        "email": "info@techgenius-group.com"
+        "email": "shaliglobalservices@gmail.com"
       },
       {
-        "name": "Superior Systems",
-        "address": "789 Superior Road, Superville",
-        "phone": "+1 (555) 777-1234",
-        "website": "https://www.superior-systems.com",
-        "image": "superior-systems-logo.png",
+        "name": "Pin Global Enterprise Unlimited",
+        "address": "BLOCK 2, RHODA ROAD, AKENFA-EPIE YENAGOA, Bayelsa",
+        "phone": "(+234)903 381 9627",
+        "website": "https://pinglobalenterprise.business.site",
+        "image": "images/pin-global.png",
         "membership_level": "Gold",
         "motto": "Engineering Excellence for You.",
-        "email": "contact@superior-systems.com"
+        "email": "pinglobalenterprise@gmail.com"
       },
       {
-        "name": "MegaTech Enterprises",
-        "address": "555 Mega Blvd, Megatown",
-        "phone": "+1 (555) 444-9999",
+        "name": "Travelsound Agency",
+        "address": "5 Oxbow Lake Road,beside CBN Headquarters,Yenagoa.",
+        "phone": "(+234)9053881225",
         "website": "https://www.megatech-enterprises.com",
-        "image": "megatech-icon.png",
+        "image": "images/travelsound.png",
         "membership_level": "Silver",
-        "motto": "Powering the Future with Innovation.",
-        "email": "hello@megatech-enterprises.com"
+        "motto": "Travel With Ease",
+        "email": "travelsoundng@gmail.com"
       },
       {
-        "name": "TechNexus Inc.",
-        "address": "567 Nexus Street, Technopolis",
-        "phone": "+1 (555) 123-9876",
-        "website": "https://www.technexus-inc.com",
-        "image": "technexus-logo.png",
+        "name": "Chelok Drive Academy - Frsc Approved",
+        "address": " 246 Melford Okilo road Ekeki, Yenagoa",
+        "phone": "(+234)8039597552",
+        "website": "https://www.chelokdriveacademy.com",
+        "image": "images/chelok.jpg",
         "membership_level": "Bronze",
-        "motto": "Connecting Ideas, Building Synergy.",
-        "email": "info@technexus-inc.com"
+        "motto": "Best Driving Academy",
+        "email": "chelokdriveacademy@gmail.com"
       }
     ]
   }

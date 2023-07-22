@@ -27,7 +27,7 @@
                 <li><a href="https://deinmoere.github.io/wdd230/chamber/index.html" class="active">Home</a></li>             
                 <li><a href="https://deinmoere.github.io/wdd230/chamber/discover.html">Discover</a></li>
                 <li><a href="https://deinmoere.github.io/wdd230/chamber/directory.html">Directory</a></li>
-                <li><button href="https://deinmoere.github.io/wdd230/chamber/join.html">Membership</button></li>
+                <li><a href="https://deinmoere.github.io/wdd230/chamber/join.html">Membership</a></li>
             </ul>
 
         </nav>
@@ -35,62 +35,90 @@
     </header>
     
     <main id="main">
-        <div class="event">
-            <h3>Upcoming Events</h3>
-            <ul>
-                <li class="list1">
-                    <span class="event-date"> 30th June </span><br /> Health Walk 
-                </li>
-                <li class="list2">
-                    <span class="event-date"> 11th July </span><br /> NBA Bayelsa BRANCH BAR Week
-                </li>
-                <li class="list3">
-                    <span class="event-date"> 14th July </span><br /> Business Bootcamp & Networking
-                </li>
-                <li class="list4">
-                    <span class="event-date"> 18th July </span><br /> Aerodynamics Workshop
-                </li>
-                <li class="list5">
-                    <span class="event-date"> 20th July </span><br /> Chamber Monthly  Audit
-                </li>
-                <li class="list6">
-                    <span class="event-date"> 22th July </span><br /> Chamber General Conference
-                </li>
-                <li class="list7">
-                    <span class="event-date"> 26th July </span><br /> Chamber Summer Get-together
-                </li>
-                <li class="list8">
-                    <span class="event-date"> 1th August </span><br /> Training
-                </li>
-                <li class="list9">
-                    <span class="event-date"> 11th August </span><br /> Ibadan Market Women Summit
-                </li>
-                <li class="list10">
-                    <span class="event-date"> 18th August </span><br /> Niger Delta University Convocation
-                </li>
-                <li class="list11">
-                    <span class="event-date"> 22nd August </span><br /> Yenagoa Media Networking Event
-                </li>
-                
-            </ul>
-        <div>
-            <p class="daysOfVisit"></p>
-        </div>
-        </div>
-        <div class="weather">
-            <h5>Weather</h5>
-            <div class="icon">
-                <img id="icon" src="images/weather.webp" alt="weather icon" loading="lazy" />
-                <p><span id="temp"></span>°C</p>
+        <div class="sidebar">
+            <div class="daysOfVisit">
+                <h2>.</h2>
             </div>
-            <p id="icon-desc"></p>
-            <hr class="temo-div" />
-            <p>Wind Speed: <span id="speed"></span>km/h</p>
-            <p id="chill-output"></p>
-        </div>
-        <div class="join">
-            <p> Discover how to join the Yenagoa Chamber of Commerce and how it will benefit your organization!</p>
-            <a href="join.html"> Join Us!</a>
+
+            <div class="event">
+                <h3>Upcoming Events</h3>
+                <ul>
+                    <li class="list1">
+                        <span class="event-date"> 30th June </span><br /> Health Walk 
+                    </li>
+                    <li class="list2">
+                        <span class="event-date"> 11th July </span><br /> NBA Bayelsa BRANCH BAR Week
+                    </li>
+                    <li class="list3">
+                        <span class="event-date"> 14th July </span><br /> Business Bootcamp & Networking
+                    </li>
+                    <li class="list4">
+                        <span class="event-date"> 18th July </span><br /> Aerodynamics Workshop
+                    </li>
+                    <li class="list5">
+                        <span class="event-date"> 20th July </span><br /> Chamber Monthly  Audit
+                    </li>
+                    <li class="list6">
+                        <span class="event-date"> 22th July </span><br /> Chamber General Conference
+                    </li>
+                    <li class="list7">
+                        <span class="event-date"> 26th July </span><br /> Chamber Summer Get-together
+                    </li>
+                    <li class="list8">
+                        <span class="event-date"> 1th August </span><br /> Training
+                    </li>
+                    <li class="list9">
+                        <span class="event-date"> 11th August </span><br /> Ibadan Market Women Summit
+                    </li>
+                    <li class="list10">
+                        <span class="event-date"> 18th August </span><br /> Niger Delta University Convocation
+                    </li>
+                    <li class="list11">
+                        <span class="event-date"> 22nd August </span><br /> Yenagoa Media Networking Event
+                    </li>
+                    
+                </ul>            
+            </div>
+
+            <div class="wrapper-calendar">
+                <div class="head">
+                    <p class="current-date"></p>
+                    <div class="icons">
+                        <span id="prev" class="material-symbols">&lt;</span>
+                        <span id="next" class="material-symbols">&gt;</span>
+                    </div>
+                </div>
+                <div class="calendar">
+                    <ul class="weeks">
+                        <li>Sun</li>
+                        <li>Mon</li>
+                        <li>Tue</li>
+                        <li>Wed</li>
+                        <li>Thu</li>
+                        <li>Fri</li>
+                        <li>Sat</li>
+                    </ul>
+
+                    <ul class="days"></ul>
+
+                </div>
+            </div>
+            
+            <div class="weather">
+                <h5>Weather</h5>
+                <div class="icon">
+                    <img id="icon" src="images/weather.webp" alt="weather icon" loading="lazy" />
+                    <p><span id="temp"></span>°C</p>
+                </div>
+                <p id="icon-desc"></p>
+                <hr class="temo-div" />
+                <p>Wind Speed: <span id="speed"></span>km/h</p>
+                <p id="chill-output"></p>
+            </div>
+            <div class="join">
+                <p> Discover how to join the Yenagoa Chamber of Commerce and how it will benefit your organization!</p>
+                <a href="join.html"> Join Us!</a>
+            </div>
         </div>
 
         <!-- <div class="top">
