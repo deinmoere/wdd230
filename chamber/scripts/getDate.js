@@ -38,7 +38,7 @@ const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon-today');
 const captionDesc = document.querySelector('#todayCaption');
 
-const url = 'https://api.openweathermap.org/data/2.5/weather?lat=4.95&lon=6.34&units=imperial&appid=84887fd1e98f2909b5621a6c5dfe03f3';
+const url = 'https://api.openweathermap.org/data/3.0/weather?lat=4.95&lon=6.34&units=imperial&appid=84887fd1e98f2909b5621a6c5dfe03f3';
 
 async function apiFetch(){
     try {
@@ -74,7 +74,7 @@ const forecastTemp = document.querySelector('#forecast-temp');
 const forecastIcon = document.querySelector('#weather-icon-forecast');
 const forecastCaption = document.querySelector('#forecastCaption');
 
-const forecastUrl = 'https://api.openweathermap.org/data/2.5/forecast?lat=4.95&lon=6.34&units=imperial&appid=84887fd1e98f2909b5621a6c5dfe03f3';
+const forecastUrl = 'https://api.openweathermap.org/data/3.0/forecast?lat=4.95&lon=6.34&units=imperial&appid=84887fd1e98f2909b5621a6c5dfe03f3';
 
 async function apiFetchForecast(){
 	try {
