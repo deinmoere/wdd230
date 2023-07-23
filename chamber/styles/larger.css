@@ -232,6 +232,21 @@ form label.sbs {
     padding: .4rem 0;
   }
 
+  /* -------Thank You----- */
+
+#thankYou{
+    margin-top: 8rem;
+}
+
+#thankYou h1{
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+#thankYou p{
+    font-size: 1.3rem;
+    margin-bottom: 15%;
+}
 /* -------Directory-------- */
 .gridItems{
     display: grid;

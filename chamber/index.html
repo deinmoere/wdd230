@@ -6,16 +6,16 @@
     <meta name="description" content="Yenagoa Chamber of Commerce">
     <meta name="author" content="Deinmoere Hazel Ami Alafegha-Quakumey">
    
-    <meta property="og:title" content="Yenagoa Chamber of Commerce" >
+    <meta property="og:title" content="Yenagoa Chamber of Commerce">
     <meta property="og:type" content="website" >
-    <meta property="og:url" content="https://deinmoere.github.io/wdd230/chamber/index.html" >
+    <meta property="og:url" content="https://deinmoere.github.io/wdd230/chamber/index.html">
     <meta property="og:image" content="https://www.nairaland.com/attachments/13423089_yenagoa8_jpegb9fe7dd0af7278f02b3cdfbfffc86491">
 
     <title>Yenagoa Chamber of Commerce</title>
-    <link rel="stylesheet" href="styles/normalize.css" />
-    <link rel="stylesheet" href="styles/base.css" />
-    <link rel="stylesheet" href="styles/larger.css" />
-    <link rel="icon" href="favicon-two.ico" type="image/x-icon" >
+    <link rel="stylesheet" href="styles/normalize.css"/>
+    <link rel="stylesheet" href="styles/base.css"/>
+    <link rel="stylesheet" href="styles/larger.css"/>
+    <link rel="icon" href="favicon-two.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -35,8 +35,10 @@
     </header>
     <div id="hero">
         <div id="hero-box">
-            <source srcset="images/hero-image-small.webp" media="(max-width: 500px)">
-            <img src="images/hero-image-large.webp" alt="Ekeki Flyover Bridge" loading="lazy" width="1250" height="400">            
+            <picture>
+                <source srcset="images/hero-image-small.webp" media="(max-width: 500px)">
+                <img src="images/hero-image-large.webp" alt="Ekeki Flyover Bridge" loading="lazy" width="1250" height="400">
+            </picture>          
         </div>
 
         <section id="hero-msg">
@@ -76,7 +78,7 @@
             <p id="events">YenTown is excited to host our quarterly Entrepreneur Happy Hour in 
                 conjunction with attendees from the Women In Leadership Summer Series.
             </p>
-            <button class='view' href="rates.html">Read more</button>
+            <button class='view' onclick="window.location.href='rates.html';">Read more</button>
         </section>
         
         <section class="card" id="weather">
@@ -125,7 +127,7 @@
             <h2 class="home-headline-2">KEEP IN TOUCH</h2>
             <p>Subscribe to our email newsletter.</p>
             <div class='button-box'>
-                <button class="newsletter" href="newsletter.html"> SUBSCRIBE</button>
+                <button class="newsletter" onclick="window.location.href='newsletter.html';"> SUBSCRIBE</button>
             </div>
             
         </section>

@@ -395,6 +395,22 @@ form label.top input:required {
 form label.top input:required:valid {
     border-left: green solid 6px;
 }
+/* ------Thank you Message----- */
+#thankYou{
+    margin: 4rem auto;
+    text-align: center;
+}
+
+#thankYou h1{
+    width: 100%;
+    color:#072E74;
+    margin: 2rem auto;
+    font-size: 2rem;
+}
+
+#thankYou p{
+    margin: 1rem 1rem 5rem 1rem;
+}
 
 
 /* ---------Directory--------- */
